@@ -1,0 +1,6 @@
+Different(A,B)
+Place(A)
+Place(B)
+For_every x ( Place(x) & CurrentPlace(x) & NativeOf(Person, x) ) ==> TellsTruth(Person)
+For_every x For_every y ( Place(x) & Place(y) & CurrentPlace(x) & NativeOf(Person, y) & Different(x,y) ) ==> Lies(Person)
+CurrentPlace(A) ==> Lies(Person)

@@ -1,0 +1,24 @@
+Child(Zach)
+Child(Lauren)
+Child(Tara)
+Child(Xander)
+Child(Raven)
+Adult(Reed)
+Adult(Morgan)
+Adult(Fedor)
+Adult(Hanson)
+Adult(Maier)
+
+~Parent(Reed,Zach)
+~Parent(Reed,Lauren)
+
+Interested(Tara,Shopping)
+Parent(Morgan,Xander)
+
+~Interested(Xander,HayRide)
+~Interested(Zach,HayRide) 
+~Interested(Zach,ApplePicking)
+
+There_exists x Child(x) ^ ~Equals(x,Zach) ^ ~Equals(x,Lauren) ^ Parent(Fedor,x) ^ Interested(x,Cider)
+There_exists x Child(x) ^ Parent(Hanson,x) ^ ~Interested(x,HayRide)
+

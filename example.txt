@@ -1,0 +1,8 @@
+Owns(Nono, M1)
+Missile(M1)
+American(West)
+Enemy(Nono, America)
+(American(x) & Weapon(y) & Sells(x,y,z) & Hostile(z)) ==> Criminal(x)
+(Missile(x) & Owns(Nono,x)) ==> Sells(West, x, Nono)
+Missile(x) ==> Weapon(x)
+Enemy(x, America) ==> Hostile(x)
